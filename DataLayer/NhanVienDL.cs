@@ -39,7 +39,7 @@ namespace DataLayer
             try
             {
                 Connect();
-                SqlDataReader reader = MyExcuteReader(sql, CommandType.Text);
+                SqlDataReader reader = MyExecuteReader(sql, CommandType.Text);
                 while (reader.Read())
                 {
                     idNhanVien = int.Parse(reader["IdNhanVien"].ToString());
@@ -109,36 +109,36 @@ namespace DataLayer
          nv.IdChucVu + ", " +
          nv.IdTrinhDo + ", " +
          nv.IdDanToc + ", " +
-         nv.IdTonGiao + ", "+0+")";
+         nv.IdTonGiao + ", " + 0 + ")";
 
             List<SqlParameter> parameters = new List<SqlParameter>();
-            
+
             if (nv.HinhAnh != null)
                 parameters.Add(new SqlParameter("@HinhAnh", SqlDbType.VarBinary) { Value = nv.HinhAnh });
             else
                 parameters.Add(new SqlParameter("@HinhAnh", SqlDbType.VarBinary) { Value = DBNull.Value });
             try
             {
-                int result = MyExecuteNonQuery(sql, CommandType.Text,  parameters);
+                int result = MyExecuteNonQuery(sql, CommandType.Text, parameters);
                 return result > 0;
             }
             catch (SqlException ex)
             {
                 throw ex;
             }
-                  
+
         }
         public bool Update(NhanVien nv)
         {
-            
+
             string sql = "UPDATE NhanVien SET " +
     "HoTen = N'" + nv.HoTen + "', " +
     "GioiTinh = " + (nv.GioiTinh ? 1 : 0) + ", " +
-    "NgaySinh = '" + nv.NgaySinh.ToString("yyyy-MM-dd") + "', " + 
-    "DienThoai = '" + nv.DienThoai + "', " +    "CanCuocCongDan = '" + nv.CCCD + "', " +     "DiaChi = N'" + nv.DiaChi + "', " +
-    "HinhAnh = " + "@HinhAnh" + ", " +    "IdPhongBan = " + nv.IdPhongBan + ", " +     "IdBoPhan = " + nv.IdBoPhan + ", " + 
-    "IdChucVu = " + nv.IdChucVu + ", " +     "IdTrinhDo = " + nv.IdTrinhDo + ", " +     "IdDanToc = " + nv.IdDanToc + ", " + 
-    "IdTonGiao = " + nv.IdTonGiao + " " +     "WHERE IdNhanVien = " + nv.IdNhanVien;
+    "NgaySinh = '" + nv.NgaySinh.ToString("yyyy-MM-dd") + "', " +
+    "DienThoai = '" + nv.DienThoai + "', " + "CanCuocCongDan = '" + nv.CCCD + "', " + "DiaChi = N'" + nv.DiaChi + "', " +
+    "HinhAnh = " + "@HinhAnh" + ", " + "IdPhongBan = " + nv.IdPhongBan + ", " + "IdBoPhan = " + nv.IdBoPhan + ", " +
+    "IdChucVu = " + nv.IdChucVu + ", " + "IdTrinhDo = " + nv.IdTrinhDo + ", " + "IdDanToc = " + nv.IdDanToc + ", " +
+    "IdTonGiao = " + nv.IdTonGiao + " " + "WHERE IdNhanVien = " + nv.IdNhanVien;
             List<SqlParameter> parameters = new List<SqlParameter>();
 
             if (nv.HinhAnh != null)
@@ -147,20 +147,20 @@ namespace DataLayer
                 parameters.Add(new SqlParameter("@HinhAnh", SqlDbType.VarBinary) { Value = DBNull.Value });
             try
             {
-                
+
                 int result = MyExecuteNonQuery(sql, CommandType.Text, parameters);
                 return result > 0;
-                
+
             }
             catch (SqlException ex)
             {
                 throw ex;
             }
-            
+
         }
         public bool Delete(int id)
         {
-            string sql = "DELETE FROM NhanVien WHERE IdNhanVien = "+id;
+            string sql = "DELETE FROM NhanVien WHERE IdNhanVien = " + id;
             try
             {
                 int result = MyExecuteNonQuery(sql, CommandType.Text);
@@ -170,7 +170,7 @@ namespace DataLayer
             {
                 throw ex;
             }
-            
+
         }
     }
 }

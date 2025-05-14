@@ -23,12 +23,19 @@ namespace BusinessLayer
                 throw ex;
             }
         }
+        public LoaiCa GetItem(int id)
+        {
+            return loaiCaDL.GetItem(id); 
+        }
+
 
         public bool AddLoaiCa(LoaiCa loaiCa)
         {
             try { 
-            return loaiCaDL.AddLoaiCa(loaiCa);
-        }
+            
+                return loaiCaDL.AddLoaiCa(loaiCa);
+                }
+            
             catch (SqlException ex) {throw ex;}
         }
         public bool UpdateLoaiCa(LoaiCa loaiCa)

@@ -20,7 +20,7 @@ namespace DataLayer
             try
             {
                 Connect();
-                SqlDataReader reader = MyExcuteReader(sql, CommandType.Text);
+                SqlDataReader reader = MyExecuteReader(sql, CommandType.Text);
                 while (reader.Read())
                 {
                     id = int.Parse(reader["IdChucVu"].ToString());

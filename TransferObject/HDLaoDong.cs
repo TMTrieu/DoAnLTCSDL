@@ -17,6 +17,8 @@ namespace TransferObject
         public int LanKy {  get; set; }
         public string ThoiHan {  get; set; }
         public float HeSoLuong { get; set; }
+
+        public int LuongCoBan { get; set; }
         public int IdNhanVien { get; set; }
         public string HoTen { get; set; }
        
@@ -35,7 +37,7 @@ namespace TransferObject
 
         public HDLaoDong() { }
         public HDLaoDong (int idHopDong, string soHD,DateTime ngayBatDau, DateTime ngayKetThuc, DateTime ngayKy, string hotenNhanVien, string cccd, string diachi,string ngaysinh,
-        string noiDung, int lanKy, string thoiHan, float heSoLuong, int idNhanVien, int? createdBy = null, DateTime? createdDate = null, int? updatedBy = null, DateTime? updatedDate = null,
+        string noiDung, int lanKy, string thoiHan,int luongcoban, float heSoLuong, int idNhanVien, int? createdBy = null, DateTime? createdDate = null, int? updatedBy = null, DateTime? updatedDate = null,
                          int? deletedBy = null, DateTime? deletedDate = null)
         {
             this.IdHopDong = idHopDong;
@@ -51,6 +53,7 @@ namespace TransferObject
             this.HoTen = hotenNhanVien;
             this.CanCuocCongDan = cccd;
             this.DiaChi = diachi;
+            this.LuongCoBan= luongcoban;
             this.NgaySinh = ngaysinh;
             this.Created_By = createdBy;
             this.Created_Date = createdDate;

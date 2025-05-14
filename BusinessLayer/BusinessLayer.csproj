@@ -42,18 +42,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoPhanBL.cs" />
+    <Compile Include="ChamCongBL\BangCongChiTietBL.cs" />
     <Compile Include="ChamCongBL\KyCongBL.cs" />
-    <Compile Include="ChucVuBL.cs" />
-    <Compile Include="DanTocBL.cs" />
+    <Compile Include="ChamCongBL\KyCongChiTietBL.cs" />
     <Compile Include="ChamCongBL\LoaiCaBL.cs" />
     <Compile Include="ChamCongBL\LoaiCongBL.cs" />
-    <Compile Include="HDLaoDongDL.cs" />
-    <Compile Include="LoginBL.cs" />
+    <Compile Include="ChucVuBL.cs" />
+    <Compile Include="DanTocBL.cs" />
+    <Compile Include="HDLaoDongBL.cs" />
+    <Compile Include="Login\TaiKhoanAdminBL.cs" />
+    <Compile Include="Login\TaiKhoanNhanVienBL.cs" />
     <Compile Include="NhanVienBL.cs" />
     <Compile Include="PhongBanBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TinhLuongBL\BangLuongBL.cs" />
+    <Compile Include="TinhLuongBL\NhanVienPhuCapBL.cs" />
+    <Compile Include="TinhLuongBL\PhuCapBL.cs" />
+    <Compile Include="TinhLuongBL\SysConfigBL.cs" />
+    <Compile Include="TinhLuongBL\TangCaBL.cs" />
     <Compile Include="TonGiaoBL.cs" />
     <Compile Include="TrinhDoBL.cs" />
+    <Compile Include="YeuCauThoiViecBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataLayer\DataLayer.csproj">

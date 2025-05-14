@@ -41,19 +41,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
     <Compile Include="BoPhan.cs" />
+    <Compile Include="ChamCong\BangCongChiTiet.cs" />
+    <Compile Include="ChamCong\KyCong.cs" />
+    <Compile Include="ChamCong\KyCongChiTiet.cs" />
+    <Compile Include="ChamCong\LoaiCa.cs" />
+    <Compile Include="ChamCong\LoaiCong.cs" />
     <Compile Include="ChucVu.cs" />
     <Compile Include="DanToc.cs" />
     <Compile Include="HDLaoDong.cs" />
-    <Compile Include="KyCong.cs" />
-    <Compile Include="LoaiCa.cs" />
-    <Compile Include="LoaiCong.cs" />
+    <Compile Include="Login\TaiKhoan.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="PhongBan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TinhLuong\BangLuong.cs" />
+    <Compile Include="TinhLuong\NhanVienPhuCap.cs" />
+    <Compile Include="TinhLuong\PhuCap.cs" />
+    <Compile Include="TinhLuong\SysConfig.cs" />
+    <Compile Include="TinhLuong\TangCa.cs" />
     <Compile Include="TonGiao.cs" />
     <Compile Include="TrinhDo.cs" />
+    <Compile Include="YeuCauThoiViec.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace QuanLyNhanSu.Reports
+﻿namespace PresentationLayer
 {
     partial class rptDSNhanVien
     {
@@ -105,8 +105,8 @@
             // xrTable1
             // 
             this.xrTable1.BackColor = System.Drawing.Color.Gainsboro;
-            this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top) 
-            | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.xrTable1.Borders = ((DevExpress.XtraPrinting.BorderSide)((((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Top)
+            | DevExpress.XtraPrinting.BorderSide.Right)
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable1.Font = new DevExpress.Drawing.DXFont("Arial", 9F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 137.5F);
@@ -226,7 +226,7 @@
             // 
             // xrTable2
             // 
-            this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right) 
+            this.xrTable2.Borders = ((DevExpress.XtraPrinting.BorderSide)(((DevExpress.XtraPrinting.BorderSide.Left | DevExpress.XtraPrinting.BorderSide.Right)
             | DevExpress.XtraPrinting.BorderSide.Bottom)));
             this.xrTable2.Font = new DevExpress.Drawing.DXFont("Arial", 9F);
             this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(4.238552E-05F, 0F);

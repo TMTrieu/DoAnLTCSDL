@@ -42,18 +42,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoPhanDL.cs" />
-    <Compile Include="ChucVuDL.cs" />
-    <Compile Include="DanTocDL.cs" />
-    <Compile Include="DataProvider.cs" />
+    <Compile Include="ChamCongDL\BangCongChiTietDL.cs" />
+    <Compile Include="ChamCongDL\KyCongChiTietDL.cs" />
     <Compile Include="ChamCongDL\KyCongDL.cs" />
     <Compile Include="ChamCongDL\LoaiCaDL.cs" />
     <Compile Include="ChamCongDL\LoaiCongDL.cs" />
-    <Compile Include="LoginDL.cs" />
+    <Compile Include="ChucVuDL.cs" />
+    <Compile Include="DanTocDL.cs" />
+    <Compile Include="DataProvider.cs" />
+    <Compile Include="HDLaoDongDL.cs" />
+    <Compile Include="Login\TaiKhoanAdminDL.cs" />
+    <Compile Include="Login\TaiKhoanNhanVienDL.cs" />
     <Compile Include="NhanVienDL.cs" />
     <Compile Include="PhongBanDL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TinhLuongDL\BangLuongDL.cs" />
+    <Compile Include="TinhLuongDL\NhanVienPhuCapDL.cs" />
+    <Compile Include="TinhLuongDL\PhuCapDL.cs" />
+    <Compile Include="TinhLuongDL\SysConfigDL.cs" />
+    <Compile Include="TinhLuongDL\TangCaDL.cs" />
     <Compile Include="TonGiaoDL.cs" />
     <Compile Include="TrinhDoDL.cs" />
+    <Compile Include="YeuCauThoiViecDL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TransferObject\TransferObject.csproj">

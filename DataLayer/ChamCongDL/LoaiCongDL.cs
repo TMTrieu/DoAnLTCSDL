@@ -21,11 +21,13 @@ namespace DataLayer
             try
             {
                 Connect();
-                SqlDataReader dr = MyExcuteReader(sql, CommandType.Text);
+                SqlDataReader dr = MyExecuteReader(sql, CommandType.Text);
 
                 while (dr.Read())
                 {
                     id = int.Parse(dr["IdLoaiCong"].ToString());
+                    
+
                     ten = dr["TenLoaiCong"].ToString();
                     heSo = double.Parse(dr[2].ToString());
 

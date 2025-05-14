@@ -114,11 +114,13 @@
             // dgcPhongBan
             // 
             this.dgcPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgcPhongBan.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgcPhongBan.Location = new System.Drawing.Point(0, 0);
             this.dgcPhongBan.MainView = this.dgvPhongBan;
+            this.dgcPhongBan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgcPhongBan.MenuManager = this.barManager1;
             this.dgcPhongBan.Name = "dgcPhongBan";
-            this.dgcPhongBan.Size = new System.Drawing.Size(939, 282);
+            this.dgcPhongBan.Size = new System.Drawing.Size(959, 274);
             this.dgcPhongBan.TabIndex = 0;
             this.dgcPhongBan.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgvPhongBan});
@@ -158,7 +160,6 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnLuu, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnHuy, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnIn, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btDong, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
@@ -216,6 +217,7 @@
             this.btnIn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnIn.ImageOptions.Image")));
             this.btnIn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnIn.ImageOptions.LargeImage")));
             this.btnIn.Name = "btnIn";
+            this.btnIn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnIn_ItemClick);
             // 
             // btDong
             // 
@@ -224,6 +226,7 @@
             this.btDong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btDong.ImageOptions.Image")));
             this.btDong.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btDong.ImageOptions.LargeImage")));
             this.btDong.Name = "btDong";
+            this.btDong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btDong_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -232,34 +235,34 @@
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(939, 34);
+            this.barDockControlTop.Size = new System.Drawing.Size(959, 36);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 404);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 410);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(939, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(959, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 34);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 370);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 374);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(939, 34);
+            this.barDockControlRight.Location = new System.Drawing.Point(959, 36);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 370);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 374);
             // 
             // btnDong
             // 
@@ -296,9 +299,9 @@
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(939, 34);
+            this.barDockControl4.Location = new System.Drawing.Point(959, 36);
             this.barDockControl4.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControl4.Size = new System.Drawing.Size(0, 370);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 374);
             // 
             // lbTen
             // 
@@ -322,7 +325,7 @@
             // 
             // txtPhongBan
             // 
-            this.txtPhongBan.Location = new System.Drawing.Point(392, 46);
+            this.txtPhongBan.Location = new System.Drawing.Point(392, 48);
             this.txtPhongBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhongBan.MenuManager = this.barManager1;
             this.txtPhongBan.Name = "txtPhongBan";
@@ -332,13 +335,14 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 34);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.splitContainer1.Panel1.Controls.Add(this.lbTen);
             this.splitContainer1.Panel1.Controls.Add(this.lbID);
             this.splitContainer1.Panel1.Controls.Add(this.txtId);
@@ -347,8 +351,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgcPhongBan);
-            this.splitContainer1.Size = new System.Drawing.Size(939, 370);
-            this.splitContainer1.SplitterDistance = 83;
+            this.splitContainer1.Size = new System.Drawing.Size(959, 374);
+            this.splitContainer1.SplitterDistance = 95;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 9;
             // 
@@ -374,15 +378,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 404);
+            this.ClientSize = new System.Drawing.Size(959, 410);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControl4);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormPhongBan";
-            this.Text = "FormPhongBan";
+            this.Text = "Phòng ban";
             this.Load += new System.EventHandler(this.FormPhongBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgcPhongBan)).EndInit();

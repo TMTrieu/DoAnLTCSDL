@@ -11,10 +11,10 @@ namespace TransferObject
         public int IdTrinhDo { get; set; }
         public string TenTrinhDo { get; set; }
         public TrinhDo() { }
-        public TrinhDo(int id, string ten)
+        public TrinhDo(int IdTrinhDo, string TenTrinhDo)
         {
-            this.IdTrinhDo = id;
-            this.TenTrinhDo = ten;
+            this.IdTrinhDo = IdTrinhDo;
+            this.TenTrinhDo = TenTrinhDo;
         }
     }
 }
