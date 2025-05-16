@@ -1,9 +1,11 @@
-﻿using PresentationLayer.QuanLyChamCong;
+﻿using PresentationLayer.ChamCong;
+using PresentationLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransferObject;
 
 namespace PresentationLayer
 {
@@ -17,7 +19,25 @@ namespace PresentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormNhanVien());
+            //Application.Run(new FormKyCong());
+
+            FormDangNhap frmDangNhap = new FormDangNhap();
+            DialogResult result = frmDangNhap.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                string vaiTro = frmDangNhap.VaiTro.ToLower();
+
+                if (vaiTro == "admin")
+                {
+                    Application.Run(new FormAdmin());
+                }
+                else
+                {
+                    //int idNV = frmDangNhap.IdNhanVien;
+                    Application.Run(new FormUser(frmDangNhap.IdNhanVien));
+                }
+            }
         }
     }
 }

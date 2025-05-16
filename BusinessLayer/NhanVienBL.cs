@@ -30,6 +30,7 @@ namespace BusinessLayer
                 throw ex;
             }
         }
+
         public void Add(NhanVien nv)
         {
             try

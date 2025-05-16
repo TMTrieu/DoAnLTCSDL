@@ -7,7 +7,7 @@ using DevExpress.XtraReports.UI;
 using TransferObject;
 using BusinessLayer;
 
-namespace QuanLyNhanSu.Reports
+namespace PresentationLayer  
 {
     public partial class rptDSNhanVien : DevExpress.XtraReports.UI.XtraReport
     {

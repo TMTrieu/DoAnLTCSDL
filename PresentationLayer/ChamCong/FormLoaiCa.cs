@@ -25,7 +25,7 @@ namespace PresentationLayer
         {
             InitializeComponent();
             loaiCaBL = new LoaiCaBL();
-            
+
         }
 
         private void FormLoaiCa_Load(object sender, EventArgs e)
@@ -42,8 +42,6 @@ namespace PresentationLayer
             ShowHide(true);
         }
 
-
-
         void ShowHide(bool kt)
         {
             btnLuu.Enabled = !kt;
@@ -52,21 +50,23 @@ namespace PresentationLayer
             btnSua.Enabled = kt;
             btnXoa.Enabled = kt;
             btnDong.Enabled = kt;
-            btnIn.Enabled = kt;
 
             lbTen.Show();
             lbTen.Text = "Loại ca";
-
             txtTen.Text = string.Empty;
             txtTen.Show();
             txtTen.Enabled = !kt;
 
             lbID.Text = "ID";
-
             txtId.Enabled = !kt;
             txtId.Text = string.Empty;
 
-            nbrUDHeSo.Enabled = !kt;
+            lbGioBatDau.Show();
+            txtGioBatDau.Enabled = !kt;
+            txtGioBatDau.EditValue = null;
+            lbGioKetThuc.Show();
+            txtGioKetThuc.Enabled = !kt;
+            txtGioKetThuc.EditValue = null;
         }
 
         private void btnThem_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -83,19 +83,22 @@ namespace PresentationLayer
             ShowHide(false);
             lbID.Text = "Nhập Id đối tượng";
             lbTen.Text = "Nhập tên muốn sửa";
+            if (dgvLoaiCa.FocusedRowHandle >= 0)
+            {
+                txtId.Text = dgvLoaiCa.GetFocusedRowCellValue("ID")?.ToString();
+                txtTen.Text = dgvLoaiCa.GetFocusedRowCellValue("TenLoaiCa")?.ToString();
+                txtHeSo.Text = dgvLoaiCa.GetFocusedRowCellValue("HeSo")?.ToString();
+                txtGioBatDau.EditValue = TimeSpan.Parse(dgvLoaiCa.GetFocusedRowCellValue("GioBatDau")?.ToString());
+                txtGioKetThuc.EditValue = TimeSpan.Parse(dgvLoaiCa.GetFocusedRowCellValue("GioKetThuc")?.ToString());
+            }
         }
 
         private void btnXoa_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            action = ActionType.delete;
-            action = ActionType.delete;
-            ShowHide(false);
-            lbID.Text = "Nhập ID đối tượng muốn xóa";
-            lbTen.Hide();
-            txtTen.Enabled = false;
-            txtTen.Hide();
-            lbHeSo.Hide();
-            nbrUDHeSo.Hide();
+
+            int id = int.Parse(dgvLoaiCa.GetFocusedRowCellValue("ID")?.ToString());
+            loaiCaBL.DeleteLoaiCa(id);
+            dgcLoaiCa.DataSource = loaiCaBL.GetLoaiCas();
         }
 
         private void btnHuy_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -118,18 +121,24 @@ namespace PresentationLayer
                 MessageBox.Show("Tên loại ca không được để trống!", "Lỗi", MessageBoxButtons.OK);
                 return;
             }
-
-            double HeSo = double.Parse(nbrUDHeSo.Text);
-            if(HeSo <= 0 || HeSo>4)
+            if ((txtGioBatDau.EditValue == null || txtGioKetThuc.EditValue == null) && action != ActionType.delete)
             {
-                MessageBox.Show("Nhập sai hệ số!", "Lỗi", MessageBoxButtons.OK);
+                MessageBox.Show("Giờ bắt đầu và giờ kết thúc không được để trống!", "Lỗi", MessageBoxButtons.OK);
                 return;
             }
+            if (!float.TryParse(txtHeSo.Text.Trim(), out float heSo))
+            {
+                MessageBox.Show("Hệ số phải là một số thực hợp lệ!", "Lỗi", MessageBoxButtons.OK);
+                return;
+            }
+
+            TimeSpan gioBatDau = (TimeSpan)txtGioBatDau.EditValue;
+            TimeSpan gioKetThuc = (TimeSpan)txtGioKetThuc.EditValue;
             switch (action)
 
             {
                 case ActionType.add:
-                    loaiCa = new LoaiCa(id, ten,HeSo);
+                    loaiCa = new LoaiCa(id, ten, gioBatDau, gioKetThuc, heSo);
 
                     try
                     {
@@ -141,7 +150,7 @@ namespace PresentationLayer
                     }
                     break;
                 case ActionType.update:
-                    loaiCa = new LoaiCa(id, ten, HeSo);
+                    loaiCa = new LoaiCa(id, ten, gioBatDau, gioKetThuc, heSo);
                     try
                     {
                         loaiCaBL.UpdateLoaiCa(loaiCa);
@@ -153,24 +162,22 @@ namespace PresentationLayer
 
                     break;
 
-                case ActionType.delete:
-                    try
-                    {
-                        loaiCaBL.DeleteLoaiCa(id);
-
-                    }
-                    catch (SqlException ex)
-                    {
-                        MessageBox.Show(ex.Message, "Loi");
-                    }
-
-                    break;
                 default:
                     break;
             }
             dgcLoaiCa.DataSource = loaiCaBL.GetLoaiCas();
 
             ShowHide(true);
+        }
+
+        private void btDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

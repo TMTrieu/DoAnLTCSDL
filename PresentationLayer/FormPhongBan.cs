@@ -154,5 +154,16 @@ namespace PresentationLayer
         {
             ShowHide(true);
         }
+
+      
+        private void btDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnIn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

@@ -16,7 +16,7 @@ namespace DataLayer
 
         public DataProvider() 
         {
-            string cnStr = "Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+            string cnStr = "Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True;Encrypt=False";
             cn = new SqlConnection(cnStr);
 
         }
@@ -50,7 +50,7 @@ namespace DataLayer
                 throw ex;
             }
         }
-        public object MyExcuteScalar(string sql, CommandType type)
+        public object MyExecuteScalar(string sql, CommandType type)
         {
             try
             {
@@ -70,13 +70,14 @@ namespace DataLayer
             }
         }
 
-        public SqlDataReader MyExcuteReader(string sql, CommandType type)
+        public SqlDataReader MyExecuteReader(string sql, CommandType type)
         {
             SqlCommand cmd = new SqlCommand(sql, cn);
             cmd.CommandType = type;
 
             try
             {
+                
                 return (cmd.ExecuteReader());
             }
             catch (SqlException ex)

@@ -13,7 +13,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TransferObject;
 using PresentationLayer.BaoCao;
-using QuanLyNhanSu.Reports;
 using DevExpress.XtraReports.UI;
 
 namespace PresentationLayer
@@ -96,8 +95,6 @@ namespace PresentationLayer
             btnDongg.Enabled = kt;
             btIn.Enabled = kt;
             splitContainer1.Panel1Collapsed = kt;
-
-            
         }
         void EmptyText()
         {

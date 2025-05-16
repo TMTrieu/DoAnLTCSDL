@@ -15,21 +15,21 @@ namespace DataLayer
         {
             List<LoaiCa> loaiCas = new List<LoaiCa>();
             string sql = "SELECT * FROM LoaiCa";
-            int id;
-            string ten;
-            double heSo;
             try
             {
                 Connect();
-                SqlDataReader dr = MyExcuteReader(sql, CommandType.Text);
+                SqlDataReader dr = MyExecuteReader(sql, CommandType.Text);
 
                 while (dr.Read())
                 {
-                    id = int.Parse(dr["IdLoaiCa"].ToString());
-                    ten = dr["TenLoaiCa"].ToString();
-                    heSo = double.Parse(dr[2].ToString());
+                    int id = Convert.ToInt32(dr["IdLoaiCa"]);
+                    
+                    string ten = dr["TenLoaiCa"].ToString();
+                    TimeSpan gioBatDau = TimeSpan.Parse(dr["GioBatDau"].ToString());
+                    TimeSpan gioKetThuc = TimeSpan.Parse(dr["GioKetThuc"].ToString());
+                    float heSo = float.Parse(dr["HeSo"].ToString());
 
-                    LoaiCa loaiCa = new LoaiCa(id, ten, heSo);
+                    LoaiCa loaiCa = new LoaiCa(id, ten, gioBatDau, gioKetThuc, heSo);
                     loaiCas.Add(loaiCa);
                 }
 
@@ -45,9 +45,43 @@ namespace DataLayer
                 DisConnect();
             }
         }
+        public LoaiCa GetItem(int id)
+        {
+            LoaiCa result = null;
+            string sql = $"SELECT * FROM LoaiCa WHERE IdLoaiCa = {id}";
+
+            try
+            {
+                Connect();
+                SqlDataReader dr = MyExecuteReader(sql, CommandType.Text);
+                if (dr.Read())
+                {
+                    result = new LoaiCa
+                    {
+                        IdLoaiCa = Convert.ToInt32(dr["IdLoaiCa"]),
+                        TenLoaiCa = dr["TenLoaiCa"].ToString(),
+                        HeSo = float.Parse(dr["HeSo"].ToString()),
+                        GioBatDau = TimeSpan.Parse(dr["GioBatDau"].ToString()),
+                        GioKetThuc = TimeSpan.Parse(dr["GioKetThuc"].ToString())
+                       
+                    };
+                }
+                dr.Close();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi khi lấy Loai Ca: " + ex.Message);
+            }
+            finally
+            {
+                DisConnect();
+            }
+        }
+
         public bool AddLoaiCa(LoaiCa loaiCa)
         {
-            string sql = "INSERT INTO LoaiCa VALUES (" + loaiCa.ID + ", N'" + loaiCa.TenLoaiCa + "', "+loaiCa.HeSo+")";
+            string sql = "INSERT INTO LoaiCa VALUES (" + loaiCa.IdLoaiCa + ", N'" + loaiCa.TenLoaiCa + "', "+loaiCa.HeSo+")";
 
             try
             {
@@ -67,7 +101,7 @@ namespace DataLayer
 
         public bool UpdateLoaiCa(LoaiCa loaiCa)
         {
-            string sql = "UPDATE LoaiCa SET TenLoaiCa ='" + loaiCa.TenLoaiCa + "', HeSo = "+loaiCa.HeSo+" WHERE IdLoaiCa =" + loaiCa.ID;
+            string sql = "UPDATE LoaiCa SET TenLoaiCa ='" + loaiCa.TenLoaiCa + "', HeSo = "+loaiCa.HeSo+" WHERE IdLoaiCa =" + loaiCa.IdLoaiCa;
             try
             {
                 Connect();
