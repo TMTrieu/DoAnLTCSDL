@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using TransferObject;
 using BusinessLayer.ChamCongBL;
 using DevExpress.Utils.Extensions;
+using System.Data.SqlClient;
 
 namespace PresentationLayer.ChamCong
 {
@@ -262,6 +263,31 @@ namespace PresentationLayer.ChamCong
                 tEGioRa.EditValue = loaiCa.GioKetThuc.ToString(@"hh\:mm\:ss");
             }
             tEGioVao.EditValue = TimeSpan.Parse(DateTime.Now.TimeOfDay.ToString(@"hh\:mm\:ss"));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (bangCongChiTiet == null)
+            {
+                MessageBox.Show("Chưa chọn ca cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                if (MessageBox.Show("Xóa ca có ID: " + bangCongChiTiet.IdBangCong + "?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                {
+                    try
+                    {
+                        bangCongChiTietBL.DeleteBangCongChiTiet(bangCongChiTiet.IdBangCong);
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show(ex.Message, "Loi");
+                    }
+                }
+                this.Close();
+            }
         }
 
         private void gridView1_Click(object sender, EventArgs e)

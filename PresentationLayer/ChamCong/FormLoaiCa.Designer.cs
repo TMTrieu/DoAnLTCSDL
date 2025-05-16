@@ -102,8 +102,9 @@
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(962, 47);
-            this.barDockControl4.Size = new System.Drawing.Size(0, 458);
+            this.barDockControl4.Location = new System.Drawing.Point(1237, 57);
+            this.barDockControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 543);
             // 
             // barDockControl6
             // 
@@ -138,33 +139,35 @@
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(135, 39);
+            this.txtTen.Location = new System.Drawing.Point(174, 46);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(198, 34);
+            this.txtTen.Size = new System.Drawing.Size(255, 40);
             this.txtTen.TabIndex = 6;
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(44, 39);
+            this.txtId.Location = new System.Drawing.Point(57, 46);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(42, 34);
+            this.txtId.Size = new System.Drawing.Size(54, 40);
             this.txtId.TabIndex = 6;
             // 
             // lbTen
             // 
             this.lbTen.AutoSize = true;
             this.lbTen.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTen.Location = new System.Drawing.Point(132, 19);
-            this.lbTen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTen.Location = new System.Drawing.Point(170, 23);
             this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(61, 18);
+            this.lbTen.Size = new System.Drawing.Size(73, 22);
             this.lbTen.TabIndex = 8;
             this.lbTen.Text = "Loại ca";
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 47);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 57);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -184,51 +187,53 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgcLoaiCa);
-            this.splitContainer1.Size = new System.Drawing.Size(962, 458);
-            this.splitContainer1.SplitterDistance = 114;
+            this.splitContainer1.Size = new System.Drawing.Size(1237, 543);
+            this.splitContainer1.SplitterDistance = 135;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(352, 17);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(453, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 18);
+            this.label1.Size = new System.Drawing.Size(60, 22);
             this.label1.TabIndex = 12;
             this.label1.Text = "Hệ số";
             // 
             // txtHeSo
             // 
             this.txtHeSo.EditValue = "";
-            this.txtHeSo.Location = new System.Drawing.Point(355, 37);
+            this.txtHeSo.Location = new System.Drawing.Point(456, 44);
+            this.txtHeSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHeSo.Name = "txtHeSo";
-            this.txtHeSo.Size = new System.Drawing.Size(170, 34);
+            this.txtHeSo.Size = new System.Drawing.Size(219, 40);
             this.txtHeSo.TabIndex = 11;
             // 
             // txtGioKetThuc
             // 
             this.txtGioKetThuc.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.txtGioKetThuc.Location = new System.Drawing.Point(723, 39);
-            this.txtGioKetThuc.Margin = new System.Windows.Forms.Padding(5);
+            this.txtGioKetThuc.Location = new System.Drawing.Point(930, 46);
+            this.txtGioKetThuc.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtGioKetThuc.Name = "txtGioKetThuc";
             this.txtGioKetThuc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtGioKetThuc.Properties.MaskSettings.Set("mask", "hh:mm:ss");
-            this.txtGioKetThuc.Size = new System.Drawing.Size(175, 34);
+            this.txtGioKetThuc.Size = new System.Drawing.Size(225, 40);
             this.txtGioKetThuc.TabIndex = 10;
             // 
             // txtGioBatDau
             // 
             this.txtGioBatDau.EditValue = System.TimeSpan.Parse("00:00:00");
-            this.txtGioBatDau.Location = new System.Drawing.Point(550, 37);
+            this.txtGioBatDau.Location = new System.Drawing.Point(707, 44);
+            this.txtGioBatDau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGioBatDau.MenuManager = this.barManager1;
             this.txtGioBatDau.Name = "txtGioBatDau";
             this.txtGioBatDau.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txtGioBatDau.Properties.MaskSettings.Set("mask", "hh:mm:ss");
-            this.txtGioBatDau.Size = new System.Drawing.Size(117, 34);
+            this.txtGioBatDau.Size = new System.Drawing.Size(150, 40);
             this.txtGioBatDau.TabIndex = 10;
             // 
             // barManager1
@@ -331,31 +336,35 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(962, 47);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1237, 57);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 505);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 600);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(962, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1237, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 47);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 57);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 458);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 543);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(962, 47);
+            this.barDockControlRight.Location = new System.Drawing.Point(1237, 57);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 458);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 543);
             // 
             // btnDong
             // 
@@ -381,10 +390,9 @@
             // 
             this.lbGioKetThuc.AutoSize = true;
             this.lbGioKetThuc.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbGioKetThuc.Location = new System.Drawing.Point(720, 15);
-            this.lbGioKetThuc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbGioKetThuc.Location = new System.Drawing.Point(926, 18);
             this.lbGioKetThuc.Name = "lbGioKetThuc";
-            this.lbGioKetThuc.Size = new System.Drawing.Size(97, 18);
+            this.lbGioKetThuc.Size = new System.Drawing.Size(119, 22);
             this.lbGioKetThuc.TabIndex = 8;
             this.lbGioKetThuc.Text = "Giờ kết thúc";
             // 
@@ -392,10 +400,9 @@
             // 
             this.lbGioBatDau.AutoSize = true;
             this.lbGioBatDau.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbGioBatDau.Location = new System.Drawing.Point(547, 17);
-            this.lbGioBatDau.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbGioBatDau.Location = new System.Drawing.Point(703, 20);
             this.lbGioBatDau.Name = "lbGioBatDau";
-            this.lbGioBatDau.Size = new System.Drawing.Size(92, 18);
+            this.lbGioBatDau.Size = new System.Drawing.Size(112, 22);
             this.lbGioBatDau.TabIndex = 8;
             this.lbGioBatDau.Text = "Giờ bắt đầu";
             // 
@@ -403,23 +410,22 @@
             // 
             this.lbID.AutoSize = true;
             this.lbID.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbID.Location = new System.Drawing.Point(41, 19);
-            this.lbID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbID.Location = new System.Drawing.Point(53, 23);
             this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(26, 18);
+            this.lbID.Size = new System.Drawing.Size(33, 22);
             this.lbID.TabIndex = 7;
             this.lbID.Text = "ID";
             // 
             // dgcLoaiCa
             // 
             this.dgcLoaiCa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgcLoaiCa.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgcLoaiCa.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgcLoaiCa.Location = new System.Drawing.Point(0, 0);
             this.dgcLoaiCa.MainView = this.dgvLoaiCa;
-            this.dgcLoaiCa.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dgcLoaiCa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgcLoaiCa.MenuManager = this.barManager1;
             this.dgcLoaiCa.Name = "dgcLoaiCa";
-            this.dgcLoaiCa.Size = new System.Drawing.Size(962, 340);
+            this.dgcLoaiCa.Size = new System.Drawing.Size(1237, 403);
             this.dgcLoaiCa.TabIndex = 0;
             this.dgcLoaiCa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgvLoaiCa});
@@ -432,61 +438,59 @@
             this.HeSo,
             this.gioBD,
             this.gioKT});
-            this.dgvLoaiCa.DetailHeight = 295;
             this.dgvLoaiCa.GridControl = this.dgcLoaiCa;
             this.dgvLoaiCa.Name = "dgvLoaiCa";
-            this.dgvLoaiCa.OptionsEditForm.PopupEditFormWidth = 622;
             // 
             // ID
             // 
             this.ID.Caption = "ID";
-            this.ID.FieldName = "ID";
-            this.ID.MinWidth = 23;
+            this.ID.FieldName = "IdLoaiCa";
+            this.ID.MinWidth = 30;
             this.ID.Name = "ID";
             this.ID.Visible = true;
             this.ID.VisibleIndex = 0;
-            this.ID.Width = 117;
+            this.ID.Width = 150;
             // 
             // TenLoaiCa
             // 
             this.TenLoaiCa.Caption = "Loại ca";
             this.TenLoaiCa.FieldName = "TenLoaiCa";
-            this.TenLoaiCa.MinWidth = 23;
+            this.TenLoaiCa.MinWidth = 30;
             this.TenLoaiCa.Name = "TenLoaiCa";
             this.TenLoaiCa.Visible = true;
             this.TenLoaiCa.VisibleIndex = 1;
-            this.TenLoaiCa.Width = 355;
+            this.TenLoaiCa.Width = 456;
             // 
             // HeSo
             // 
             this.HeSo.Caption = "Hệ số";
             this.HeSo.FieldName = "HeSo";
-            this.HeSo.MaxWidth = 150;
-            this.HeSo.MinWidth = 80;
+            this.HeSo.MaxWidth = 193;
+            this.HeSo.MinWidth = 103;
             this.HeSo.Name = "HeSo";
             this.HeSo.Visible = true;
             this.HeSo.VisibleIndex = 2;
-            this.HeSo.Width = 94;
+            this.HeSo.Width = 121;
             // 
             // gioBD
             // 
             this.gioBD.Caption = "Giờ bắt đầu";
             this.gioBD.FieldName = "GioBatDau";
-            this.gioBD.MinWidth = 23;
+            this.gioBD.MinWidth = 30;
             this.gioBD.Name = "gioBD";
             this.gioBD.Visible = true;
             this.gioBD.VisibleIndex = 3;
-            this.gioBD.Width = 87;
+            this.gioBD.Width = 112;
             // 
             // gioKT
             // 
             this.gioKT.Caption = "Giờ kết thúc";
             this.gioKT.FieldName = "GioKetThuc";
-            this.gioKT.MinWidth = 23;
+            this.gioKT.MinWidth = 30;
             this.gioKT.Name = "gioKT";
             this.gioKT.Visible = true;
             this.gioKT.VisibleIndex = 4;
-            this.gioKT.Width = 87;
+            this.gioKT.Width = 112;
             // 
             // bar2
             // 
@@ -532,16 +536,16 @@
             // 
             this.Appearance.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 505);
+            this.ClientSize = new System.Drawing.Size(1237, 600);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControl4);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormLoaiCa";
             this.Text = "Loại ca";
             this.Load += new System.EventHandler(this.FormLoaiCa_Load);

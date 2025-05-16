@@ -53,6 +53,7 @@
             this.btThoat = new DevExpress.XtraBars.BarButtonItem();
             this.btChucVu = new DevExpress.XtraBars.BarButtonItem();
             this.btBoPhan = new DevExpress.XtraBars.BarButtonItem();
+            this.btThongKeHD = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -73,7 +74,7 @@
             // 
             // ribbon
             // 
-            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(35, 38, 35, 38);
+            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(45);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -98,16 +99,18 @@
             this.btPhucHoiDuLieu,
             this.btThoat,
             this.btChucVu,
-            this.btBoPhan});
+            this.btBoPhan,
+            this.btThongKeHD});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 29;
+            this.ribbon.Margin = new System.Windows.Forms.Padding(4);
+            this.ribbon.MaxItemId = 30;
             this.ribbon.Name = "ribbon";
-            this.ribbon.OptionsMenuMinWidth = 385;
+            this.ribbon.OptionsMenuMinWidth = 495;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage4});
-            this.ribbon.Size = new System.Drawing.Size(982, 242);
+            this.ribbon.Size = new System.Drawing.Size(1263, 292);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btDanToc
@@ -283,6 +286,14 @@
             this.btBoPhan.Name = "btBoPhan";
             this.btBoPhan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btBoPhan_ItemClick);
             // 
+            // btThongKeHD
+            // 
+            this.btThongKeHD.Caption = "Thống Kê HD";
+            this.btThongKeHD.Id = 29;
+            this.btThongKeHD.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btThongKeHD.ImageOptions.SvgImage")));
+            this.btThongKeHD.Name = "btThongKeHD";
+            this.btThongKeHD.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btThongKeHD_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -320,6 +331,7 @@
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.btHopDong);
             this.ribbonPageGroup4.ItemLinks.Add(this.btThoiViec);
+            this.ribbonPageGroup4.ItemLinks.Add(this.btThongKeHD);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             this.ribbonPageGroup4.Text = "Nghiệp vụ";
             // 
@@ -343,10 +355,11 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 459);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 543);
+            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(982, 45);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1263, 55);
             // 
             // ribbonPageGroup1
             // 
@@ -364,9 +377,9 @@
             // sidePanel1
             // 
             this.sidePanel1.Location = new System.Drawing.Point(0, 0);
-            this.sidePanel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.sidePanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.sidePanel1.Name = "sidePanel1";
-            this.sidePanel1.Size = new System.Drawing.Size(58, 19);
+            this.sidePanel1.Size = new System.Drawing.Size(75, 23);
             this.sidePanel1.TabIndex = 3;
             this.sidePanel1.Text = "sidePanel1";
             // 
@@ -376,14 +389,14 @@
             // 
             // FormAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 504);
+            this.ClientSize = new System.Drawing.Size(1263, 598);
             this.Controls.Add(this.sidePanel1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormAdmin";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
@@ -437,5 +450,6 @@
         private DevExpress.XtraBars.BarButtonItem btBoPhan;
         private DevExpress.XtraEditors.SidePanel sidePanel1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private DevExpress.XtraBars.BarButtonItem btThongKeHD;
     }
 }

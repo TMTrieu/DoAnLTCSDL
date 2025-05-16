@@ -34,39 +34,39 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupThongTinChiTiet = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtGioVao3 = new System.Windows.Forms.Label();
+            this.txtGioVao2 = new System.Windows.Forms.Label();
+            this.txtGioVao1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtLamThem = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtNghiCT = new System.Windows.Forms.Label();
+            this.txtVeSom2 = new System.Windows.Forms.Label();
+            this.txtVeSom3 = new System.Windows.Forms.Label();
+            this.txtVeSom1 = new System.Windows.Forms.Label();
+            this.txtDiTre2 = new System.Windows.Forms.Label();
+            this.txtDiTre3 = new System.Windows.Forms.Label();
+            this.txtGioRa3 = new System.Windows.Forms.Label();
+            this.txtDiTre = new System.Windows.Forms.Label();
+            this.txtGioRa2 = new System.Windows.Forms.Label();
+            this.txtGioRa1 = new System.Windows.Forms.Label();
+            this.txtTrangThai = new System.Windows.Forms.Label();
             this.txtCong = new System.Windows.Forms.Label();
+            this.txtTrangThai3 = new System.Windows.Forms.Label();
+            this.txtCong3 = new System.Windows.Forms.Label();
+            this.txtTrangThai2 = new System.Windows.Forms.Label();
+            this.txtCong2 = new System.Windows.Forms.Label();
+            this.txtCa3 = new System.Windows.Forms.Label();
+            this.txtCa2 = new System.Windows.Forms.Label();
             this.txtCa = new System.Windows.Forms.Label();
             this.txtTen = new System.Windows.Forms.Label();
             this.lbTen = new System.Windows.Forms.Label();
-            this.txtGioRa1 = new System.Windows.Forms.Label();
-            this.txtGioVao1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtDiTre = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtVeSom1 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtNghiCT = new System.Windows.Forms.Label();
-            this.txtLamThem = new System.Windows.Forms.Label();
-            this.txtGioVao2 = new System.Windows.Forms.Label();
-            this.txtGioRa2 = new System.Windows.Forms.Label();
-            this.txtDiTre3 = new System.Windows.Forms.Label();
-            this.txtVeSom3 = new System.Windows.Forms.Label();
-            this.txtCa2 = new System.Windows.Forms.Label();
-            this.txtCong2 = new System.Windows.Forms.Label();
-            this.txtCa3 = new System.Windows.Forms.Label();
-            this.txtCong3 = new System.Windows.Forms.Label();
-            this.txtGioRa3 = new System.Windows.Forms.Label();
-            this.txtGioVao3 = new System.Windows.Forms.Label();
-            this.txtVeSom2 = new System.Windows.Forms.Label();
-            this.txtDiTre2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtTrangThai2 = new System.Windows.Forms.Label();
-            this.txtTrangThai3 = new System.Windows.Forms.Label();
-            this.txtTrangThai = new System.Windows.Forms.Label();
             this.groupThongTinChiTiet.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -176,6 +176,232 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
             // 
+            // txtGioVao3
+            // 
+            this.txtGioVao3.AutoSize = true;
+            this.txtGioVao3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGioVao3.Location = new System.Drawing.Point(325, 42);
+            this.txtGioVao3.Name = "txtGioVao3";
+            this.txtGioVao3.Size = new System.Drawing.Size(0, 22);
+            this.txtGioVao3.TabIndex = 8;
+            // 
+            // txtGioVao2
+            // 
+            this.txtGioVao2.AutoSize = true;
+            this.txtGioVao2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGioVao2.Location = new System.Drawing.Point(204, 42);
+            this.txtGioVao2.Name = "txtGioVao2";
+            this.txtGioVao2.Size = new System.Drawing.Size(0, 22);
+            this.txtGioVao2.TabIndex = 8;
+            // 
+            // txtGioVao1
+            // 
+            this.txtGioVao1.AutoSize = true;
+            this.txtGioVao1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGioVao1.Location = new System.Drawing.Point(87, 42);
+            this.txtGioVao1.Name = "txtGioVao1";
+            this.txtGioVao1.Size = new System.Drawing.Size(44, 22);
+            this.txtGioVao1.TabIndex = 8;
+            this.txtGioVao1.Text = "--:--";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label8.Location = new System.Drawing.Point(8, 282);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(215, 22);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Thời gian làm thêm giờ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(8, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(170, 22);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Nghỉ/Đi công tác:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label12.Location = new System.Drawing.Point(231, 128);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(82, 22);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Về sớm:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label10.Location = new System.Drawing.Point(8, 128);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 22);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Đi trễ:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(87, 282);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 22);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "--:--";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(87, 233);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(44, 22);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "--:--";
+            // 
+            // txtLamThem
+            // 
+            this.txtLamThem.AutoSize = true;
+            this.txtLamThem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtLamThem.Location = new System.Drawing.Point(310, 282);
+            this.txtLamThem.Name = "txtLamThem";
+            this.txtLamThem.Size = new System.Drawing.Size(20, 22);
+            this.txtLamThem.TabIndex = 8;
+            this.txtLamThem.Text = "0";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label11.Location = new System.Drawing.Point(366, 282);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 22);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "phút";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label9.Location = new System.Drawing.Point(366, 233);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 22);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "tiếng";
+            // 
+            // txtNghiCT
+            // 
+            this.txtNghiCT.AutoSize = true;
+            this.txtNghiCT.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtNghiCT.Location = new System.Drawing.Point(310, 233);
+            this.txtNghiCT.Name = "txtNghiCT";
+            this.txtNghiCT.Size = new System.Drawing.Size(20, 22);
+            this.txtNghiCT.TabIndex = 8;
+            this.txtNghiCT.Text = "0";
+            // 
+            // txtVeSom2
+            // 
+            this.txtVeSom2.AutoSize = true;
+            this.txtVeSom2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtVeSom2.Location = new System.Drawing.Point(310, 158);
+            this.txtVeSom2.Name = "txtVeSom2";
+            this.txtVeSom2.Size = new System.Drawing.Size(0, 22);
+            this.txtVeSom2.TabIndex = 8;
+            this.txtVeSom2.Click += new System.EventHandler(this.txtVeSom_Click);
+            // 
+            // txtVeSom3
+            // 
+            this.txtVeSom3.AutoSize = true;
+            this.txtVeSom3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtVeSom3.Location = new System.Drawing.Point(310, 185);
+            this.txtVeSom3.Name = "txtVeSom3";
+            this.txtVeSom3.Size = new System.Drawing.Size(0, 22);
+            this.txtVeSom3.TabIndex = 8;
+            this.txtVeSom3.Click += new System.EventHandler(this.txtVeSom_Click);
+            // 
+            // txtVeSom1
+            // 
+            this.txtVeSom1.AutoSize = true;
+            this.txtVeSom1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtVeSom1.Location = new System.Drawing.Point(310, 128);
+            this.txtVeSom1.Name = "txtVeSom1";
+            this.txtVeSom1.Size = new System.Drawing.Size(61, 22);
+            this.txtVeSom1.TabIndex = 8;
+            this.txtVeSom1.Text = "Không";
+            this.txtVeSom1.Click += new System.EventHandler(this.txtVeSom_Click);
+            // 
+            // txtDiTre2
+            // 
+            this.txtDiTre2.AutoSize = true;
+            this.txtDiTre2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtDiTre2.Location = new System.Drawing.Point(87, 158);
+            this.txtDiTre2.Name = "txtDiTre2";
+            this.txtDiTre2.Size = new System.Drawing.Size(0, 22);
+            this.txtDiTre2.TabIndex = 8;
+            // 
+            // txtDiTre3
+            // 
+            this.txtDiTre3.AutoSize = true;
+            this.txtDiTre3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtDiTre3.Location = new System.Drawing.Point(87, 185);
+            this.txtDiTre3.Name = "txtDiTre3";
+            this.txtDiTre3.Size = new System.Drawing.Size(0, 22);
+            this.txtDiTre3.TabIndex = 8;
+            // 
+            // txtGioRa3
+            // 
+            this.txtGioRa3.AutoSize = true;
+            this.txtGioRa3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGioRa3.Location = new System.Drawing.Point(325, 86);
+            this.txtGioRa3.Name = "txtGioRa3";
+            this.txtGioRa3.Size = new System.Drawing.Size(0, 22);
+            this.txtGioRa3.TabIndex = 8;
+            // 
+            // txtDiTre
+            // 
+            this.txtDiTre.AutoSize = true;
+            this.txtDiTre.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtDiTre.Location = new System.Drawing.Point(87, 128);
+            this.txtDiTre.Name = "txtDiTre";
+            this.txtDiTre.Size = new System.Drawing.Size(61, 22);
+            this.txtDiTre.TabIndex = 8;
+            this.txtDiTre.Text = "Không";
+            // 
+            // txtGioRa2
+            // 
+            this.txtGioRa2.AutoSize = true;
+            this.txtGioRa2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGioRa2.Location = new System.Drawing.Point(204, 86);
+            this.txtGioRa2.Name = "txtGioRa2";
+            this.txtGioRa2.Size = new System.Drawing.Size(0, 22);
+            this.txtGioRa2.TabIndex = 8;
+            // 
+            // txtGioRa1
+            // 
+            this.txtGioRa1.AutoSize = true;
+            this.txtGioRa1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtGioRa1.Location = new System.Drawing.Point(87, 86);
+            this.txtGioRa1.Name = "txtGioRa1";
+            this.txtGioRa1.Size = new System.Drawing.Size(44, 22);
+            this.txtGioRa1.TabIndex = 8;
+            this.txtGioRa1.Text = "--:--";
+            // 
+            // txtTrangThai
+            // 
+            this.txtTrangThai.AutoSize = true;
+            this.txtTrangThai.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTrangThai.Location = new System.Drawing.Point(113, 144);
+            this.txtTrangThai.Name = "txtTrangThai";
+            this.txtTrangThai.Size = new System.Drawing.Size(38, 22);
+            this.txtTrangThai.TabIndex = 11;
+            this.txtTrangThai.Text = "----";
+            this.txtTrangThai.Click += new System.EventHandler(this.lblTrangThai_Click);
+            // 
             // txtCong
             // 
             this.txtCong.AutoSize = true;
@@ -186,6 +412,66 @@
             this.txtCong.TabIndex = 11;
             this.txtCong.Text = "----";
             this.txtCong.Click += new System.EventHandler(this.lblTrangThai_Click);
+            // 
+            // txtTrangThai3
+            // 
+            this.txtTrangThai3.AutoSize = true;
+            this.txtTrangThai3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTrangThai3.Location = new System.Drawing.Point(335, 144);
+            this.txtTrangThai3.Name = "txtTrangThai3";
+            this.txtTrangThai3.Size = new System.Drawing.Size(0, 22);
+            this.txtTrangThai3.TabIndex = 11;
+            this.txtTrangThai3.Click += new System.EventHandler(this.lblTrangThai_Click);
+            // 
+            // txtCong3
+            // 
+            this.txtCong3.AutoSize = true;
+            this.txtCong3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtCong3.Location = new System.Drawing.Point(335, 107);
+            this.txtCong3.Name = "txtCong3";
+            this.txtCong3.Size = new System.Drawing.Size(0, 22);
+            this.txtCong3.TabIndex = 11;
+            this.txtCong3.Click += new System.EventHandler(this.lblTrangThai_Click);
+            // 
+            // txtTrangThai2
+            // 
+            this.txtTrangThai2.AutoSize = true;
+            this.txtTrangThai2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTrangThai2.Location = new System.Drawing.Point(225, 144);
+            this.txtTrangThai2.Name = "txtTrangThai2";
+            this.txtTrangThai2.Size = new System.Drawing.Size(0, 22);
+            this.txtTrangThai2.TabIndex = 11;
+            this.txtTrangThai2.Click += new System.EventHandler(this.lblTrangThai_Click);
+            // 
+            // txtCong2
+            // 
+            this.txtCong2.AutoSize = true;
+            this.txtCong2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtCong2.Location = new System.Drawing.Point(225, 107);
+            this.txtCong2.Name = "txtCong2";
+            this.txtCong2.Size = new System.Drawing.Size(0, 22);
+            this.txtCong2.TabIndex = 11;
+            this.txtCong2.Click += new System.EventHandler(this.lblTrangThai_Click);
+            // 
+            // txtCa3
+            // 
+            this.txtCa3.AutoSize = true;
+            this.txtCa3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtCa3.Location = new System.Drawing.Point(335, 76);
+            this.txtCa3.Name = "txtCa3";
+            this.txtCa3.Size = new System.Drawing.Size(0, 22);
+            this.txtCa3.TabIndex = 11;
+            this.txtCa3.Click += new System.EventHandler(this.lblTrangThai_Click);
+            // 
+            // txtCa2
+            // 
+            this.txtCa2.AutoSize = true;
+            this.txtCa2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtCa2.Location = new System.Drawing.Point(225, 76);
+            this.txtCa2.Name = "txtCa2";
+            this.txtCa2.Size = new System.Drawing.Size(0, 22);
+            this.txtCa2.TabIndex = 11;
+            this.txtCa2.Click += new System.EventHandler(this.lblTrangThai_Click);
             // 
             // txtCa
             // 
@@ -219,292 +505,6 @@
             this.lbTen.TabIndex = 11;
             this.lbTen.Text = "Nhân viên:";
             this.lbTen.Click += new System.EventHandler(this.lblTrangThai_Click);
-            // 
-            // txtGioRa1
-            // 
-            this.txtGioRa1.AutoSize = true;
-            this.txtGioRa1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtGioRa1.Location = new System.Drawing.Point(87, 86);
-            this.txtGioRa1.Name = "txtGioRa1";
-            this.txtGioRa1.Size = new System.Drawing.Size(44, 22);
-            this.txtGioRa1.TabIndex = 8;
-            this.txtGioRa1.Text = "--:--";
-            // 
-            // txtGioVao1
-            // 
-            this.txtGioVao1.AutoSize = true;
-            this.txtGioVao1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtGioVao1.Location = new System.Drawing.Point(87, 42);
-            this.txtGioVao1.Name = "txtGioVao1";
-            this.txtGioVao1.Size = new System.Drawing.Size(44, 22);
-            this.txtGioVao1.TabIndex = 8;
-            this.txtGioVao1.Text = "--:--";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(87, 233);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 22);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "--:--";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(8, 233);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 22);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Nghỉ/Đi công tác:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(87, 282);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 22);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "--:--";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(8, 282);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(215, 22);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "Thời gian làm thêm giờ";
-            // 
-            // txtDiTre
-            // 
-            this.txtDiTre.AutoSize = true;
-            this.txtDiTre.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtDiTre.Location = new System.Drawing.Point(87, 128);
-            this.txtDiTre.Name = "txtDiTre";
-            this.txtDiTre.Size = new System.Drawing.Size(61, 22);
-            this.txtDiTre.TabIndex = 8;
-            this.txtDiTre.Text = "Không";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(8, 128);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 22);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Đi trễ:";
-            // 
-            // txtVeSom1
-            // 
-            this.txtVeSom1.AutoSize = true;
-            this.txtVeSom1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtVeSom1.Location = new System.Drawing.Point(310, 128);
-            this.txtVeSom1.Name = "txtVeSom1";
-            this.txtVeSom1.Size = new System.Drawing.Size(61, 22);
-            this.txtVeSom1.TabIndex = 8;
-            this.txtVeSom1.Text = "Không";
-            this.txtVeSom1.Click += new System.EventHandler(this.txtVeSom_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(231, 128);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 22);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "Về sớm:";
-            // 
-            // txtNghiCT
-            // 
-            this.txtNghiCT.AutoSize = true;
-            this.txtNghiCT.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtNghiCT.Location = new System.Drawing.Point(310, 233);
-            this.txtNghiCT.Name = "txtNghiCT";
-            this.txtNghiCT.Size = new System.Drawing.Size(20, 22);
-            this.txtNghiCT.TabIndex = 8;
-            this.txtNghiCT.Text = "0";
-            // 
-            // txtLamThem
-            // 
-            this.txtLamThem.AutoSize = true;
-            this.txtLamThem.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtLamThem.Location = new System.Drawing.Point(310, 282);
-            this.txtLamThem.Name = "txtLamThem";
-            this.txtLamThem.Size = new System.Drawing.Size(20, 22);
-            this.txtLamThem.TabIndex = 8;
-            this.txtLamThem.Text = "0";
-            // 
-            // txtGioVao2
-            // 
-            this.txtGioVao2.AutoSize = true;
-            this.txtGioVao2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtGioVao2.Location = new System.Drawing.Point(204, 42);
-            this.txtGioVao2.Name = "txtGioVao2";
-            this.txtGioVao2.Size = new System.Drawing.Size(0, 22);
-            this.txtGioVao2.TabIndex = 8;
-            // 
-            // txtGioRa2
-            // 
-            this.txtGioRa2.AutoSize = true;
-            this.txtGioRa2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtGioRa2.Location = new System.Drawing.Point(204, 86);
-            this.txtGioRa2.Name = "txtGioRa2";
-            this.txtGioRa2.Size = new System.Drawing.Size(0, 22);
-            this.txtGioRa2.TabIndex = 8;
-            // 
-            // txtDiTre3
-            // 
-            this.txtDiTre3.AutoSize = true;
-            this.txtDiTre3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtDiTre3.Location = new System.Drawing.Point(87, 185);
-            this.txtDiTre3.Name = "txtDiTre3";
-            this.txtDiTre3.Size = new System.Drawing.Size(0, 22);
-            this.txtDiTre3.TabIndex = 8;
-            // 
-            // txtVeSom3
-            // 
-            this.txtVeSom3.AutoSize = true;
-            this.txtVeSom3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtVeSom3.Location = new System.Drawing.Point(310, 185);
-            this.txtVeSom3.Name = "txtVeSom3";
-            this.txtVeSom3.Size = new System.Drawing.Size(0, 22);
-            this.txtVeSom3.TabIndex = 8;
-            this.txtVeSom3.Click += new System.EventHandler(this.txtVeSom_Click);
-            // 
-            // txtCa2
-            // 
-            this.txtCa2.AutoSize = true;
-            this.txtCa2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtCa2.Location = new System.Drawing.Point(225, 76);
-            this.txtCa2.Name = "txtCa2";
-            this.txtCa2.Size = new System.Drawing.Size(0, 22);
-            this.txtCa2.TabIndex = 11;
-            this.txtCa2.Click += new System.EventHandler(this.lblTrangThai_Click);
-            // 
-            // txtCong2
-            // 
-            this.txtCong2.AutoSize = true;
-            this.txtCong2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtCong2.Location = new System.Drawing.Point(225, 107);
-            this.txtCong2.Name = "txtCong2";
-            this.txtCong2.Size = new System.Drawing.Size(0, 22);
-            this.txtCong2.TabIndex = 11;
-            this.txtCong2.Click += new System.EventHandler(this.lblTrangThai_Click);
-            // 
-            // txtCa3
-            // 
-            this.txtCa3.AutoSize = true;
-            this.txtCa3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtCa3.Location = new System.Drawing.Point(335, 76);
-            this.txtCa3.Name = "txtCa3";
-            this.txtCa3.Size = new System.Drawing.Size(0, 22);
-            this.txtCa3.TabIndex = 11;
-            this.txtCa3.Click += new System.EventHandler(this.lblTrangThai_Click);
-            // 
-            // txtCong3
-            // 
-            this.txtCong3.AutoSize = true;
-            this.txtCong3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtCong3.Location = new System.Drawing.Point(335, 107);
-            this.txtCong3.Name = "txtCong3";
-            this.txtCong3.Size = new System.Drawing.Size(0, 22);
-            this.txtCong3.TabIndex = 11;
-            this.txtCong3.Click += new System.EventHandler(this.lblTrangThai_Click);
-            // 
-            // txtGioRa3
-            // 
-            this.txtGioRa3.AutoSize = true;
-            this.txtGioRa3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtGioRa3.Location = new System.Drawing.Point(325, 86);
-            this.txtGioRa3.Name = "txtGioRa3";
-            this.txtGioRa3.Size = new System.Drawing.Size(0, 22);
-            this.txtGioRa3.TabIndex = 8;
-            // 
-            // txtGioVao3
-            // 
-            this.txtGioVao3.AutoSize = true;
-            this.txtGioVao3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtGioVao3.Location = new System.Drawing.Point(325, 42);
-            this.txtGioVao3.Name = "txtGioVao3";
-            this.txtGioVao3.Size = new System.Drawing.Size(0, 22);
-            this.txtGioVao3.TabIndex = 8;
-            // 
-            // txtVeSom2
-            // 
-            this.txtVeSom2.AutoSize = true;
-            this.txtVeSom2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtVeSom2.Location = new System.Drawing.Point(310, 158);
-            this.txtVeSom2.Name = "txtVeSom2";
-            this.txtVeSom2.Size = new System.Drawing.Size(0, 22);
-            this.txtVeSom2.TabIndex = 8;
-            this.txtVeSom2.Click += new System.EventHandler(this.txtVeSom_Click);
-            // 
-            // txtDiTre2
-            // 
-            this.txtDiTre2.AutoSize = true;
-            this.txtDiTre2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtDiTre2.Location = new System.Drawing.Point(87, 158);
-            this.txtDiTre2.Name = "txtDiTre2";
-            this.txtDiTre2.Size = new System.Drawing.Size(0, 22);
-            this.txtDiTre2.TabIndex = 8;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(366, 233);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 22);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "tiếng";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(366, 282);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 22);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "phút";
-            // 
-            // txtTrangThai2
-            // 
-            this.txtTrangThai2.AutoSize = true;
-            this.txtTrangThai2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTrangThai2.Location = new System.Drawing.Point(225, 144);
-            this.txtTrangThai2.Name = "txtTrangThai2";
-            this.txtTrangThai2.Size = new System.Drawing.Size(0, 22);
-            this.txtTrangThai2.TabIndex = 11;
-            this.txtTrangThai2.Click += new System.EventHandler(this.lblTrangThai_Click);
-            // 
-            // txtTrangThai3
-            // 
-            this.txtTrangThai3.AutoSize = true;
-            this.txtTrangThai3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTrangThai3.Location = new System.Drawing.Point(335, 144);
-            this.txtTrangThai3.Name = "txtTrangThai3";
-            this.txtTrangThai3.Size = new System.Drawing.Size(0, 22);
-            this.txtTrangThai3.TabIndex = 11;
-            this.txtTrangThai3.Click += new System.EventHandler(this.lblTrangThai_Click);
-            // 
-            // txtTrangThai
-            // 
-            this.txtTrangThai.AutoSize = true;
-            this.txtTrangThai.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTrangThai.Location = new System.Drawing.Point(113, 144);
-            this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.Size = new System.Drawing.Size(38, 22);
-            this.txtTrangThai.TabIndex = 11;
-            this.txtTrangThai.Text = "----";
-            this.txtTrangThai.Click += new System.EventHandler(this.lblTrangThai_Click);
             // 
             // FormXemChiTiet
             // 

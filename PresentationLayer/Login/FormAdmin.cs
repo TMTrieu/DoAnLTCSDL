@@ -131,5 +131,10 @@ namespace PresentationLayer
         {
             OpenForm(new FormDuyetThoiViec(_idNhanVien));
         }
+
+        private void btThongKeHD_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            OpenForm(new FormThongKeHD());
+        }
     }
 }

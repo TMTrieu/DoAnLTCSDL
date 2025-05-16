@@ -94,6 +94,7 @@
             this.btnXemBangCong = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.ctMSCapNhat = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.chBKhoa = new System.Windows.Forms.CheckBox();
             this.cbBThang = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -106,7 +107,6 @@
             this.bar6 = new DevExpress.XtraBars.Bar();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.ctMenuStrip = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgcBangCong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBangCong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -123,7 +123,7 @@
             // 
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 36);
+            this.barDockControl6.Location = new System.Drawing.Point(0, 57);
             this.barDockControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.barDockControl6.Size = new System.Drawing.Size(1638, 0);
             // 
@@ -176,7 +176,7 @@
             this.dgcBangCong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgcBangCong.MenuManager = this.barManager1;
             this.dgcBangCong.Name = "dgcBangCong";
-            this.dgcBangCong.Size = new System.Drawing.Size(1638, 409);
+            this.dgcBangCong.Size = new System.Drawing.Size(1638, 393);
             this.dgcBangCong.TabIndex = 0;
             this.dgcBangCong.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.dgvBangCong});
@@ -967,7 +967,7 @@
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1638, 36);
+            this.barDockControlTop.Size = new System.Drawing.Size(1638, 57);
             // 
             // barDockControlBottom
             // 
@@ -982,19 +982,19 @@
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 57);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 528);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 507);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1638, 36);
+            this.barDockControlRight.Location = new System.Drawing.Point(1638, 57);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 528);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 507);
             // 
             // btnLuu
             // 
@@ -1042,10 +1042,17 @@
             this.ctMSCapNhat.Name = "ctMSCapNhat";
             this.ctMSCapNhat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.ctMSCapNhat_ItemClick);
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Xem";
+            this.barButtonItem1.Id = 13;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 36);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 57);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
@@ -1062,8 +1069,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.dgcBangCong);
-            this.splitContainer1.Size = new System.Drawing.Size(1638, 528);
-            this.splitContainer1.SplitterDistance = 114;
+            this.splitContainer1.Size = new System.Drawing.Size(1638, 507);
+            this.splitContainer1.SplitterDistance = 109;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 19;
             // 
@@ -1098,7 +1105,7 @@
             "10",
             "11",
             "12"});
-            this.cbBThang.Size = new System.Drawing.Size(150, 26);
+            this.cbBThang.Size = new System.Drawing.Size(150, 40);
             this.cbBThang.TabIndex = 10;
             // 
             // cbBNam
@@ -1117,32 +1124,32 @@
             "2029",
             "2030",
             "2031"});
-            this.cbBNam.Size = new System.Drawing.Size(150, 26);
+            this.cbBNam.Size = new System.Drawing.Size(150, 40);
             this.cbBNam.TabIndex = 10;
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(1638, 36);
+            this.barDockControl4.Location = new System.Drawing.Point(1638, 57);
             this.barDockControl4.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControl4.Size = new System.Drawing.Size(0, 528);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 507);
             // 
             // barDockControl7
             // 
             this.barDockControl7.CausesValidation = false;
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 36);
+            this.barDockControl7.Location = new System.Drawing.Point(0, 57);
             this.barDockControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.barDockControl7.Size = new System.Drawing.Size(0, 528);
+            this.barDockControl7.Size = new System.Drawing.Size(0, 507);
             // 
             // barDockControl8
             // 
             this.barDockControl8.CausesValidation = false;
             this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(1638, 36);
+            this.barDockControl8.Location = new System.Drawing.Point(1638, 57);
             this.barDockControl8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.barDockControl8.Size = new System.Drawing.Size(0, 528);
+            this.barDockControl8.Size = new System.Drawing.Size(0, 507);
             // 
             // bar2
             // 
@@ -1188,17 +1195,10 @@
             // ctMenuStrip
             // 
             this.ctMenuStrip.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.ctMSCapNhat),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.ctMSCapNhat)});
             this.ctMenuStrip.Manager = this.barManager1;
             this.ctMenuStrip.Name = "ctMenuStrip";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Xem";
-            this.barButtonItem1.Id = 13;
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // FormKyCongChiTiet
             // 
@@ -1216,7 +1216,7 @@
             this.Controls.Add(this.barDockControlTop);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormKyCongChiTiet";
-            this.Text = "BangCongChiTiet";
+            this.Text = "Bảng công chi tiết";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.BangCongChiTiet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgcBangCong)).EndInit();

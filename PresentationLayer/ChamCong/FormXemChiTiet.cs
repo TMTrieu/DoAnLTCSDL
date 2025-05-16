@@ -101,13 +101,20 @@ namespace PresentationLayer.ChamCong
                     txtGioRa1.Text = duLieu[0].ThoiGianRa.ToString();
                     txtGioRa2.Text = duLieu[1].ThoiGianRa.ToString();
                     txtGioRa3.Text = duLieu[2].ThoiGianRa.ToString();
+
                     if (duLieu[0].IdLoaiCa != 3)
                     {
                         diTre(duLieu[0], txtDiTre);
-                        diTre(duLieu[1], txtDiTre2);
-                        diTre(duLieu[2], txtDiTre3);
                         veSom(duLieu[0], txtVeSom1);
+                    }
+                    if (duLieu[1].IdLoaiCa != 3)
+                    {
+                        diTre(duLieu[1], txtDiTre2);
                         veSom(duLieu[1], txtVeSom2);
+                    }
+                    if (duLieu[2].IdLoaiCa != 3)
+                    {
+                        diTre(duLieu[2], txtDiTre3);
                         veSom(duLieu[2], txtVeSom3);
                     }
                     break;
@@ -130,7 +137,7 @@ namespace PresentationLayer.ChamCong
         }
         private void diTre(BangCongChiTiet ca, System.Windows.Forms.Label textBox)
         {
-            if (ca.IdLoaiCa == 3)
+            if (ca.IdLoaiCa == 3 || ca.ChamCong == "P" || ca.ChamCong == "KP" || ca.ChamCong == "CT")
                 return;
             int tongPhutDiTre = 0;
             LoaiCa loaiCa = loaiCaBL.GetLoaiCas().Find(x => x.IdLoaiCa == ca.IdLoaiCa);
@@ -146,7 +153,7 @@ namespace PresentationLayer.ChamCong
         }
         private void veSom(BangCongChiTiet ca, System.Windows.Forms.Label textBox)
         {
-            if (ca.IdLoaiCa == 3 || ca.ChamCong=="P"|| ca.ChamCong=="KP")
+            if (ca.IdLoaiCa == 3 || ca.ChamCong=="P"|| ca.ChamCong=="KP" || ca.ChamCong == "CT")
                 return;
             int tongPhutVeSom = 0;
             LoaiCa loaiCa = loaiCaBL.GetLoaiCas().Find(x => x.IdLoaiCa == ca.IdLoaiCa);
