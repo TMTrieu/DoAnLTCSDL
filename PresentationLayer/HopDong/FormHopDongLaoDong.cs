@@ -193,7 +193,7 @@ namespace PresentationLayer
                 hdld.LanKy = int.Parse(spLanKy.EditValue.ToString());
                 hdld.ThoiHan = cboThoiHan.Text;
                 hdld.NoiDung = txtNoiDung.RtfText;
-                hdld.HeSoLuong = float.Parse(spHSLuong.EditValue.ToString());
+                hdld.HeSoLuong = double.Parse(spHSLuong.EditValue.ToString());
                 hdld.LuongCoBan = int.Parse(spLuongCoBan.EditValue.ToString());
                 hdld.IdNhanVien = Convert.ToInt32(slkNhanVien.EditValue.ToString());
                 hdld.Created_By = 1; 
@@ -211,7 +211,7 @@ namespace PresentationLayer
                 hdld.LanKy = int.Parse(spLanKy.EditValue.ToString());
                 hdld.ThoiHan = cboThoiHan.Text;
                 hdld.NoiDung=txtNoiDung.RtfText;
-                hdld.HeSoLuong = float.Parse(spHSLuong.EditValue.ToString());
+                hdld.HeSoLuong = double.Parse(spHSLuong.EditValue.ToString());
                 hdld.LuongCoBan = int.Parse(spLuongCoBan.EditValue.ToString());
                 hdld.IdNhanVien = Convert.ToInt32(slkNhanVien.EditValue);
                 hdld.Updated_By = 1; 

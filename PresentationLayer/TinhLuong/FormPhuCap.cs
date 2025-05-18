@@ -165,7 +165,7 @@ namespace PresentationLayer
                 nvpc.Ngay=DateTime.Now;
                 nvpc.IdNhanVien = Convert.ToInt32(slkNhanVien.EditValue);
                 nvpc.IdPhuCap = Convert.ToInt32(cboPhuCap.SelectedValue);
-                nvpc.SoTien = float.Parse(spSoTien.EditValue.ToString());
+                nvpc.SoTien = double.Parse(spSoTien.EditValue.ToString());
                 nvpc.NoiDung = txtGhiChu.Text;
                 nvpc.Created_By = 1;
                 nvpc.Created_Date = DateTime.Now;
@@ -180,7 +180,7 @@ namespace PresentationLayer
                 nvpc.IdNhanVienPhuCap = _idPhuCap;
                 nvpc.IdNhanVien = Convert.ToInt32(slkNhanVien.EditValue);
                 nvpc.IdPhuCap = Convert.ToInt32(cboPhuCap.SelectedValue);
-                nvpc.SoTien = float.Parse(spSoTien.EditValue.ToString());
+                nvpc.SoTien = double.Parse(spSoTien.EditValue.ToString());
                 nvpc.NoiDung = txtGhiChu.Text;
                 nvpc.Updated_By = 1;
                 nvpc.Updated_Date = DateTime.Now;

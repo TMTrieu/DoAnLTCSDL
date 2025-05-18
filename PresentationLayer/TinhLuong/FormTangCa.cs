@@ -153,13 +153,13 @@ namespace PresentationLayer
             {
                 int idNV = slkNhanVien.EditValue != null ? Convert.ToInt32(slkNhanVien.EditValue) : 0;
                 int idLC = cboLoaiCa.SelectedValue != null ? Convert.ToInt32(cboLoaiCa.SelectedValue) : 0;
-                float soGio = spSoGio.EditValue != null ? Convert.ToSingle(spSoGio.EditValue) : 0;
+                double soGio = spSoGio.EditValue != null ? Convert.ToSingle(spSoGio.EditValue) : 0;
 
 
                 var lc = loaicaBL.GetItem(idLC);
                 var cfg = sysConfigBL.GetItem("TangCa");
 
-                if (cfg == null || !float.TryParse(cfg.Value, out float donGia) || donGia <= 0)
+                if (cfg == null || !double.TryParse(cfg.Value, out double donGia) || donGia <= 0)
                 {
                     
                     return;
@@ -174,7 +174,7 @@ namespace PresentationLayer
                     GhiChu = txtGhiChu.Text.Trim(),
                     NgayTangCa = DateTime.Now,
                     HeSo = lc.HeSo,
-                    SoTien = (float?)(soGio * lc.HeSo * donGia),
+                    SoTien = (soGio * lc.HeSo * donGia),
                     Created_By = _them ? 1 : (int?)null,
                     Created_Date = _them ? DateTime.Now : (DateTime?)null,
                     Updated_By = !_them ? 1 : (int?)null,

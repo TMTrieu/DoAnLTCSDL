@@ -1,6 +1,8 @@
 ﻿using DataLayer;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -60,18 +62,18 @@ namespace BusinessLayer
                 throw ex;
             }
         }
-        public bool TinhLuongNhanVien(int maKyCong)
+
+        public bool Delete(int id)
         {
             try
             {
-                return bangLuongDL.TinhLuongNhanVien(maKyCong);
+                return bangLuongDL.Delete(id);
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 throw ex;
             }
         }
-
 
 
     }

@@ -11,13 +11,13 @@ namespace TransferObject
     {
         public int IdTangCa { get; set; }
         public DateTime NgayTangCa{ get; set; }
-        public float SoGio { get; set; }
-        public float ? SoTien { get; set; }
+        public double SoGio { get; set; }
+        public double SoTien { get; set; }
         public int IdNhanVien { get; set; }
         public string HoTen { get; set; }
         public int IdLoaiCa { get; set; }
         public string TenLoaiCa { get; set; }
-        public float HeSo { get; set; }
+        public double HeSo { get; set; }
         public string GhiChu { get; set; }
         public int? Created_By { get; set; }
         public DateTime? Created_Date { get; set; }
@@ -28,7 +28,7 @@ namespace TransferObject
         public TangCa() { }
 
 
-        public TangCa(int id, DateTime ngayTangCa, float soGio,float? soTien,int idNhanVien, string hoten,int idLoaiCa, string tenLoaiCa, float heSo, string ghichu, int? createdBy = null, DateTime? createdDate = null, int? updatedBy = null, DateTime? updatedDate = null,
+        public TangCa(int id, DateTime ngayTangCa, double soGio, double soTien,int idNhanVien, string hoten,int idLoaiCa, string tenLoaiCa, double heSo, string ghichu, int? createdBy = null, DateTime? createdDate = null, int? updatedBy = null, DateTime? updatedDate = null,
                          int? deletedBy = null, DateTime? deletedDate = null)
         {
             this.IdTangCa = id;

@@ -56,7 +56,7 @@ namespace PresentationLayer
             txtTen.Text = string.Empty;
             txtTen.Show();
             txtTen.Enabled = !kt;
-
+            txtHeSo.Enabled = !kt;
             lbID.Text = "ID";
             txtId.Enabled = !kt;
             txtId.Text = string.Empty;
@@ -126,7 +126,7 @@ namespace PresentationLayer
                 MessageBox.Show("Giờ bắt đầu và giờ kết thúc không được để trống!", "Lỗi", MessageBoxButtons.OK);
                 return;
             }
-            if (!float.TryParse(txtHeSo.Text.Trim(), out float heSo))
+            if (!double.TryParse(txtHeSo.Text.Trim(), out double heSo))
             {
                 MessageBox.Show("Hệ số phải là một số thực hợp lệ!", "Lỗi", MessageBoxButtons.OK);
                 return;

@@ -27,7 +27,7 @@ namespace DataLayer
                     string ten = dr["TenLoaiCa"].ToString();
                     TimeSpan gioBatDau = TimeSpan.Parse(dr["GioBatDau"].ToString());
                     TimeSpan gioKetThuc = TimeSpan.Parse(dr["GioKetThuc"].ToString());
-                    float heSo = float.Parse(dr["HeSo"].ToString());
+                    double heSo = double.Parse(dr["HeSo"].ToString());
 
                     LoaiCa loaiCa = new LoaiCa(id, ten, gioBatDau, gioKetThuc, heSo);
                     loaiCas.Add(loaiCa);
@@ -60,7 +60,7 @@ namespace DataLayer
                     {
                         IdLoaiCa = Convert.ToInt32(dr["IdLoaiCa"]),
                         TenLoaiCa = dr["TenLoaiCa"].ToString(),
-                        HeSo = float.Parse(dr["HeSo"].ToString()),
+                        HeSo = double.Parse(dr["HeSo"].ToString()),
                         GioBatDau = TimeSpan.Parse(dr["GioBatDau"].ToString()),
                         GioKetThuc = TimeSpan.Parse(dr["GioKetThuc"].ToString())
                        

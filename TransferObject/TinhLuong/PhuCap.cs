@@ -11,11 +11,11 @@ namespace TransferObject
         
             public int IdPhuCap { get; set; }
             public string TenPhuCap { get; set; }
-            public float SoTien {  get; set; }
+            public double SoTien {  get; set; }
              public PhuCap() { }
 
            
-            public PhuCap(int id, string TenPC,float soTien)
+            public PhuCap(int id, string TenPC,double soTien)
             {
                 this.IdPhuCap = id;
                 this.TenPhuCap = TenPC;

@@ -13,10 +13,10 @@ namespace DataLayer
             List<TangCa> list = new List<TangCa>();
             string sql = @"
             SELECT tc.*, nv.HoTen, lc.TenLoaiCa, lc.HeSo
-FROM TangCa tc
-LEFT JOIN NhanVien nv ON tc.IdNhanVien = nv.IdNhanVien
-LEFT JOIN LoaiCa lc ON tc.IdLoaiCa = lc.IdLoaiCa
-WHERE tc.Deleted_Date IS NULL";
+            FROM TangCa tc
+            LEFT JOIN NhanVien nv ON tc.IdNhanVien = nv.IdNhanVien
+            LEFT JOIN LoaiCa lc ON tc.IdLoaiCa = lc.IdLoaiCa
+            WHERE tc.Deleted_Date IS NULL";
 
             try
             {
@@ -26,13 +26,13 @@ WHERE tc.Deleted_Date IS NULL";
                 {
                     int idTangCa = dr["IdTangCa"] != DBNull.Value ? Convert.ToInt32(dr["IdTangCa"]) : 0;
                     DateTime ngayTangCa = dr["NgayTangCa"] != DBNull.Value ? Convert.ToDateTime(dr["NgayTangCa"]) : DateTime.MinValue;
-                    float soGio = dr["SoGio"] != DBNull.Value ? float.Parse(dr["SoGio"].ToString()) : 0f;
-                    float? soTien = dr["SoTien"] != DBNull.Value ? (float?)float.Parse(dr["SoTien"].ToString()) : null;
+                    double soGio = dr["SoGio"] != DBNull.Value ? double.Parse(dr["SoGio"].ToString()) : 0d;
+                    double soTien = dr["SoTien"] != DBNull.Value ? double.Parse(dr["SoTien"].ToString()) : 0d;
                     int idNhanVien = dr["IdNhanVien"] != DBNull.Value ? Convert.ToInt32(dr["IdNhanVien"]) : 0;
                     string hoTen = dr["HoTen"] != DBNull.Value ? dr["HoTen"].ToString() : "";
                     int idLoaiCa = dr["IdLoaiCa"] != DBNull.Value ? Convert.ToInt32(dr["IdLoaiCa"]) : 0;
                     string tenLoaiCa = dr["TenLoaiCa"] != DBNull.Value ? dr["TenLoaiCa"].ToString() : "";
-                    float heSo = dr["HeSo"] != DBNull.Value ? float.Parse(dr["HeSo"].ToString()) : 0f;
+                    double heSo = dr["HeSo"] != DBNull.Value ? double.Parse(dr["HeSo"].ToString()) : 0d;
                     string ghiChu = dr["GhiChu"] != DBNull.Value ? dr["GhiChu"].ToString() : "";
 
                     int? createdBy = dr["Created_By"] != DBNull.Value ? (int?)Convert.ToInt32(dr["Created_By"]) : null;
@@ -56,7 +56,7 @@ WHERE tc.Deleted_Date IS NULL";
             }
             catch (Exception ex)
             {
-                throw ex; 
+                throw ex;
             }
             finally
             {
@@ -64,81 +64,76 @@ WHERE tc.Deleted_Date IS NULL";
             }
         }
 
-
-
         public bool Add(TangCa tc)
         {
             string sql = @"
-        INSERT INTO TangCa (NgayTangCa, SoGio, IdNhanVien, IdLoaiCa, HeSo, SoTien, GhiChu, Created_By, Created_Date)
-        VALUES (@NgayTangCa, @SoGio, @IdNhanVien, @IdLoaiCa, @HeSo, @SoTien, @GhiChu, @Created_By, @Created_Date)";
+            INSERT INTO TangCa (NgayTangCa, SoGio, IdNhanVien, IdLoaiCa, HeSo, SoTien, GhiChu, Created_By, Created_Date)
+            VALUES (@NgayTangCa, @SoGio, @IdNhanVien, @IdLoaiCa, @HeSo, @SoTien, @GhiChu, @Created_By, @Created_Date)";
 
             var parameters = new List<SqlParameter>
-    {
-        new SqlParameter("@NgayTangCa", tc.NgayTangCa),
-        new SqlParameter("@SoGio", tc.SoGio),
-        new SqlParameter("@IdNhanVien", tc.IdNhanVien),
-        new SqlParameter("@IdLoaiCa", tc.IdLoaiCa),
-        new SqlParameter("@HeSo", tc.HeSo),
-        new SqlParameter("@SoTien", tc.SoTien),
-        new SqlParameter("@GhiChu", tc.GhiChu ?? ""),
-        new SqlParameter("@Created_By", tc.Created_By ?? (object)DBNull.Value),
-        new SqlParameter("@Created_Date", tc.Created_Date ?? DateTime.Now)
-    };
+            {
+                new SqlParameter("@NgayTangCa", tc.NgayTangCa),
+                new SqlParameter("@SoGio", tc.SoGio),
+                new SqlParameter("@IdNhanVien", tc.IdNhanVien),
+                new SqlParameter("@IdLoaiCa", tc.IdLoaiCa),
+                new SqlParameter("@HeSo", tc.HeSo),
+                new SqlParameter("@SoTien", tc.SoTien),
+                new SqlParameter("@GhiChu", tc.GhiChu ?? ""),
+                new SqlParameter("@Created_By", tc.Created_By ?? (object)DBNull.Value),
+                new SqlParameter("@Created_Date", tc.Created_Date ?? DateTime.Now)
+            };
 
             return MyExecuteNonQuery(sql, CommandType.Text, parameters) > 0;
         }
-
 
         public bool Update(TangCa tc)
         {
             string sql = @"
-        UPDATE TangCa SET
-            NgayTangCa = @NgayTangCa,
-            SoGio = @SoGio,
-            IdNhanVien = @IdNhanVien,
-            IdLoaiCa = @IdLoaiCa,
-            HeSo = @HeSo,
-            SoTien = @SoTien,
-            GhiChu = @GhiChu,
-            Updated_By = @Updated_By,
-            Updated_Date = @Updated_Date
-        WHERE IdTangCa = @IdTangCa";
+            UPDATE TangCa SET
+                NgayTangCa = @NgayTangCa,
+                SoGio = @SoGio,
+                IdNhanVien = @IdNhanVien,
+                IdLoaiCa = @IdLoaiCa,
+                HeSo = @HeSo,
+                SoTien = @SoTien,
+                GhiChu = @GhiChu,
+                Updated_By = @Updated_By,
+                Updated_Date = @Updated_Date
+            WHERE IdTangCa = @IdTangCa";
 
             var parameters = new List<SqlParameter>
-    {
-        new SqlParameter("@NgayTangCa", tc.NgayTangCa),
-        new SqlParameter("@SoGio", tc.SoGio),
-        new SqlParameter("@IdNhanVien", tc.IdNhanVien),
-        new SqlParameter("@IdLoaiCa", tc.IdLoaiCa),
-        new SqlParameter("@HeSo", tc.HeSo),
-        new SqlParameter("@SoTien", tc.SoTien),
-        new SqlParameter("@GhiChu", tc.GhiChu ?? ""),
-        new SqlParameter("@Updated_By", tc.Updated_By ?? (object)DBNull.Value),
-        new SqlParameter("@Updated_Date", tc.Updated_Date ?? DateTime.Now),
-        new SqlParameter("@IdTangCa", tc.IdTangCa)
-    };
+            {
+                new SqlParameter("@NgayTangCa", tc.NgayTangCa),
+                new SqlParameter("@SoGio", tc.SoGio),
+                new SqlParameter("@IdNhanVien", tc.IdNhanVien),
+                new SqlParameter("@IdLoaiCa", tc.IdLoaiCa),
+                new SqlParameter("@HeSo", tc.HeSo),
+                new SqlParameter("@SoTien", tc.SoTien),
+                new SqlParameter("@GhiChu", tc.GhiChu ?? ""),
+                new SqlParameter("@Updated_By", tc.Updated_By ?? (object)DBNull.Value),
+                new SqlParameter("@Updated_Date", tc.Updated_Date ?? DateTime.Now),
+                new SqlParameter("@IdTangCa", tc.IdTangCa)
+            };
 
             return MyExecuteNonQuery(sql, CommandType.Text, parameters) > 0;
         }
-
 
         public bool Delete(int id, int? deletedBy = null)
         {
             string sql = @"
-        UPDATE TangCa SET 
-            Deleted_By = @Deleted_By,
-            Deleted_Date = @Deleted_Date
-        WHERE IdTangCa = @IdTangCa";
+            UPDATE TangCa SET 
+                Deleted_By = @Deleted_By,
+                Deleted_Date = @Deleted_Date
+            WHERE IdTangCa = @IdTangCa";
 
             var parameters = new List<SqlParameter>
-    {
-        new SqlParameter("@Deleted_By", deletedBy ?? (object)DBNull.Value),
-        new SqlParameter("@Deleted_Date", DateTime.Now),
-        new SqlParameter("@IdTangCa", id)
-    };
+            {
+                new SqlParameter("@Deleted_By", deletedBy ?? (object)DBNull.Value),
+                new SqlParameter("@Deleted_Date", DateTime.Now),
+                new SqlParameter("@IdTangCa", id)
+            };
 
             return MyExecuteNonQuery(sql, CommandType.Text, parameters) > 0;
         }
-
     }
 }

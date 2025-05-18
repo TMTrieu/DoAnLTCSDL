@@ -21,7 +21,7 @@ namespace DataLayer
                 {
                     int id = int.Parse(dr["IdPhuCap"].ToString());
                     string ten = dr["TenPhuCap"].ToString();
-                    float soTien = float.Parse(dr["SoTien"].ToString());
+                    double soTien = double.Parse(dr["SoTien"].ToString());
 
                     ds.Add(new PhuCap(id, ten, soTien));
                 }
@@ -52,7 +52,7 @@ namespace DataLayer
                     pc = new PhuCap(
                         int.Parse(dr["IdPhuCap"].ToString()),
                         dr["TenPhuCap"].ToString(),
-                        float.Parse(dr["SoTien"].ToString())
+                        double.Parse(dr["SoTien"].ToString())
                     );
                 }
                 dr.Close();

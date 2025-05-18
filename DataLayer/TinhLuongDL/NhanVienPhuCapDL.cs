@@ -35,7 +35,7 @@ namespace DataLayer
                         TenPhuCap = reader["TenPhuCap"].ToString(),
                         Ngay = Convert.ToDateTime(reader["Ngay"]),
                         NoiDung = reader["NoiDung"].ToString(),
-                        SoTien = float.Parse(reader["SoTien"].ToString()),
+                        SoTien = double.Parse(reader["SoTien"].ToString()),
                         Created_By = reader["Created_By"] as int?,
                         Created_Date = reader["Created_Date"] as DateTime?,
                         Updated_By = reader["Updated_By"] as int?,

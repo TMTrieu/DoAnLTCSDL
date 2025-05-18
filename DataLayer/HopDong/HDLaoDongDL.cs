@@ -15,6 +15,7 @@ namespace DataLayer
 
             try
             {
+                Connect();
                 SqlDataReader reader = MyExecuteReader(sql, CommandType.Text);
                 while (reader.Read())
                 {
@@ -26,7 +27,7 @@ namespace DataLayer
                     hd.NgayKy = (DateTime)reader["NgayKy"];
                     hd.ThoiHan = reader["ThoiHan"].ToString();
                     hd.NoiDung = reader["NoiDung"].ToString();
-                    hd.HeSoLuong = float.Parse(reader["HeSoLuong"].ToString());
+                    hd.HeSoLuong = double.Parse(reader["HeSoLuong"].ToString());
                     hd.LuongCoBan = (int)reader["LuongCoBan"];
                     hd.LanKy = int.Parse(reader["LanKy"].ToString());
                     hd.IdNhanVien = (int)reader["IdNhanVien"];
@@ -65,7 +66,7 @@ namespace DataLayer
                         NoiDung = reader["NoiDung"].ToString(),
                         LanKy = (int)reader["LanKy"],
                         ThoiHan = reader["ThoiHan"].ToString(),
-                        HeSoLuong = float.Parse(reader["HeSoLuong"].ToString()),
+                        HeSoLuong = double.Parse(reader["HeSoLuong"].ToString()),
                         LuongCoBan = (int)reader["LuongCoBan"],
                         IdNhanVien = (int)reader["IdNhanVien"],
                         HoTen = reader["HoTen"].ToString()
@@ -109,7 +110,7 @@ namespace DataLayer
                         NoiDung = reader["NoiDung"].ToString(),
                         LanKy = (int)reader["LanKy"],
                         ThoiHan = reader["ThoiHan"].ToString(),
-                        HeSoLuong = float.Parse(reader["HeSoLuong"].ToString()),
+                        HeSoLuong = double.Parse(reader["HeSoLuong"].ToString()),
                         LuongCoBan = (int)reader["LuongCoBan"],
                         IdNhanVien = (int)reader["IdNhanVien"],
                         HoTen = reader["HoTen"].ToString(),
@@ -208,7 +209,7 @@ namespace DataLayer
                                 NgayKy = (DateTime)reader["NgayKy"],
                                 ThoiHan = reader["ThoiHan"].ToString(),
                                 NoiDung = reader["NoiDung"].ToString(),
-                                HeSoLuong = float.Parse(reader["HeSoLuong"].ToString()),
+                                HeSoLuong = double.Parse(reader["HeSoLuong"].ToString()),
                                 LuongCoBan = (int)reader["LuongCoBan"],
                                 LanKy = int.Parse(reader["LanKy"].ToString()),
                                 IdNhanVien = (int)reader["IdNhanVien"],

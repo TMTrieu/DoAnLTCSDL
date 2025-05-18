@@ -65,7 +65,7 @@ namespace DataLayer
 
         public bool UpdateTonGiao(TonGiao tonGiao)
         {
-            string sql = "UPDATE TonGiao SET TenTonGiao ='" + tonGiao.TenTonGiao + "' WHERE IdTonGiao =" + tonGiao.IdTonGiao;
+            string sql = "UPDATE TonGiao SET TenTonGiao = N'" + tonGiao.TenTonGiao + "' WHERE IdTonGiao =" + tonGiao.IdTonGiao;
             try
             {
                 Connect();

@@ -77,7 +77,6 @@ namespace DataLayer
 
             try
             {
-                
                 return (cmd.ExecuteReader());
             }
             catch (SqlException ex)

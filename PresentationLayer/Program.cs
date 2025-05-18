@@ -19,7 +19,7 @@ namespace PresentationLayer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormKyCong());
+            // Application.Run(new FormBangLuong());
 
             FormDangNhap frmDangNhap = new FormDangNhap();
             DialogResult result = frmDangNhap.ShowDialog();

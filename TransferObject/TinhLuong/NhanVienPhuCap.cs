@@ -15,7 +15,7 @@ namespace TransferObject
         public string TenChucVu { get; set; }
         public DateTime Ngay { get; set; }
         public string NoiDung { get; set; }
-        public float SoTien { get; set; }
+        public double SoTien { get; set; }
 
         public int? Created_By { get; set; }
         public DateTime? Created_Date { get; set; }
@@ -28,7 +28,7 @@ namespace TransferObject
         public string TenPhuCap { get; set; }
 
         public NhanVienPhuCap() { }
-        public NhanVienPhuCap(int idNhanVienPhuCap , int idNhanVien,int idPhuCap,DateTime ngay, string hoten,string tenChucVu,string noidung,float soTien,string tenPC, int? createdBy = null, DateTime? createdDate = null, int? updatedBy = null, DateTime? updatedDate = null,
+        public NhanVienPhuCap(int idNhanVienPhuCap , int idNhanVien,int idPhuCap,DateTime ngay, string hoten,string tenChucVu,string noidung, double soTien,string tenPC, int? createdBy = null, DateTime? createdDate = null, int? updatedBy = null, DateTime? updatedDate = null,
                          int? deletedBy = null, DateTime? deletedDate = null)
         {
             this.IdNhanVienPhuCap = idNhanVienPhuCap;
